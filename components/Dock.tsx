@@ -15,26 +15,32 @@ const items: DockItem[] = [
   {
     href: "/",
     label: "Home",
-    tile: "bg-linear-to-b from-[#6cc0ff] to-[#1f6fd6]",
-    icon: <path fill="#fff" d="M12 4.5 4 11v8.5h5.5V15h5v4.5H20V11z" />,
+    tile: "bg-[linear-gradient(90deg,#2a78dc_50%,#9fd6ff_50%)]",
+    icon: (
+      <>
+        <path stroke="#13324a" strokeWidth="1.6" strokeLinecap="round" d="M8.5 7.5v3.2M15.5 7.5v3.2" />
+        <path fill="none" stroke="#13324a" strokeWidth="1.4" strokeLinecap="round" d="M6.5 14.5c3.2 3.4 7.8 3.4 11 0" />
+      </>
+    ),
   },
   {
     href: "/journal",
     label: "Journal",
-    tile: "bg-linear-to-b from-white to-[#e6edf5]",
+    tile: "bg-linear-to-b from-white to-[#e3eaf2]",
     icon: (
       <>
-        <circle cx="12" cy="12" r="8.5" fill="#2f8cf0" />
-        <circle cx="12" cy="12" r="7" fill="none" stroke="#fff" strokeWidth="0.6" strokeDasharray="0.6 1.4" />
-        <path fill="#ef4b4b" d="m15.8 8.2-2.6 5-2.4-2.4z" />
-        <path fill="#fff" d="m8.2 15.8 2.6-5 2.4 2.4z" />
+        <circle cx="12" cy="12" r="9" fill="#d7e0ea" />
+        <circle cx="12" cy="12" r="7.8" fill="#2f8cf0" />
+        <circle cx="12" cy="12" r="6.6" fill="none" stroke="#fff" strokeWidth="0.6" strokeDasharray="0.5 1.3" strokeOpacity="0.85" />
+        <path fill="#ef5b5b" d="m16 8-2.9 5.1-2.2-2.2z" />
+        <path fill="#fff" d="m8 16 2.9-5.1 2.2 2.2z" />
       </>
     ),
   },
   {
     href: "/the-unspoken",
     label: "The Unspoken",
-    tile: "bg-linear-to-b from-white to-[#f3ece6]",
+    tile: "bg-linear-to-b from-[#fffaf6] to-[#f5e5de]",
     icon: (
       <path
         fill="#e07a6f"
@@ -45,33 +51,23 @@ const items: DockItem[] = [
   {
     href: "/becoming",
     label: "Becoming",
-    tile: "bg-linear-to-b from-white to-[#e7f1ee]",
+    tile: "bg-linear-to-b from-[#f7fcfa] to-[#dcefe8]",
     icon: (
       <>
-        <path fill="#2f8f7a" d="M19 5C11 5 5.5 9 5.5 16c0 1 .1 2 .4 3C7 12 12 9 16 8c-4 2-7.5 5.5-8.6 10.5C15 19 19 14 19 5z" />
-      </>
-    ),
-  },
-  {
-    href: "/reading-room",
-    label: "Reading Room",
-    tile: "bg-linear-to-b from-[#ffa45c] to-[#ee5f2c]",
-    icon: (
-      <>
-        <path fill="#fff" d="M3.5 6.5c2.8-1 5.8-.8 8 1v11c-2.2-1.5-5.2-1.8-8-1z" />
-        <path fill="#fff" d="M20.5 6.5c-2.8-1-5.8-.8-8 1v11c2.2-1.5 5.2-1.8 8-1z" />
+        <path fill="#3a9d88" d="M19 5C11 5 5.5 9 5.5 16c0 1 .1 2 .4 3C7 12 12 9 16 8c-4 2-7.5 5.5-8.6 10.5C15 19 19 14 19 5z" />
+        <path fill="none" stroke="#e6f4ef" strokeWidth="0.8" strokeLinecap="round" d="M9.5 15.5c2-3 4.5-5.3 7.5-7" />
       </>
     ),
   },
   {
     href: "/find-your-words",
     label: "Find Your Words",
-    tile: "bg-linear-to-b from-white to-[#f1ecf4]",
+    tile: "bg-linear-to-b from-[#fdfaff] to-[#ece4f4]",
     icon: (
       <>
-        <path fill="#c98bc0" d="M12 5c1.8 2 2.6 4.3 2.6 6.8 0 2.2-1 4-2.6 5.2-1.6-1.2-2.6-3-2.6-5.2C9.4 9.3 10.2 7 12 5z" />
         <path fill="#dba6d2" d="M4.5 10c2.6.2 4.7 1.4 6 3.3.6 1 1 2.3 1.5 3.7-3.8-.2-6.8-2.6-7.5-7zm15 0c-.7 4.4-3.7 6.8-7.5 7 .5-1.4.9-2.7 1.5-3.7 1.3-1.9 3.4-3.1 6-3.3z" />
-        <path fill="#b8955a" d="M7 18.5h10" stroke="#b8955a" strokeWidth="1" strokeLinecap="round" />
+        <path fill="#c98bc0" d="M12 5c1.8 2 2.6 4.3 2.6 6.8 0 2.2-1 4-2.6 5.2-1.6-1.2-2.6-3-2.6-5.2C9.4 9.3 10.2 7 12 5z" />
+        <path fill="none" stroke="#a993cf" strokeWidth="1" strokeLinecap="round" d="M7 19h10" />
       </>
     ),
   },
@@ -81,15 +77,23 @@ const items: DockItem[] = [
     tile: "bg-linear-to-b from-[#7ccaff] to-[#2b7fe0]",
     icon: (
       <>
-        <circle cx="12" cy="9" r="3.6" fill="#fff" />
-        <path fill="#fff" d="M5.5 19c.8-3.6 3.4-5.6 6.5-5.6s5.7 2 6.5 5.6z" />
+        <circle cx="12" cy="12" r="8.5" fill="#fff" fillOpacity="0.22" />
+        <circle cx="12" cy="10" r="3.2" fill="#fff" />
+        <path fill="#fff" d="M6.6 17.6c1-2.7 3-4.1 5.4-4.1s4.4 1.4 5.4 4.1A7.8 7.8 0 0 1 6.6 17.6z" />
       </>
     ),
   },
 ];
 
 const tileBase =
-  "flex size-11 items-center justify-center rounded-[0.8rem] shadow-[0_4px_10px_rgb(19_50_74/0.18)] ring-1 ring-black/5 transition-transform duration-200 ease-out sm:size-13";
+  "relative flex size-11 items-center justify-center overflow-hidden rounded-[0.8rem] shadow-[0_4px_10px_rgb(19_50_74/0.18)] ring-1 ring-black/5 transition-transform duration-200 ease-out sm:size-13";
+
+const tileGloss = (
+  <span
+    aria-hidden="true"
+    className="pointer-events-none absolute inset-0 bg-linear-to-b from-white/30 to-transparent to-55%"
+  />
+);
 
 export function Dock() {
   const pathname = usePathname();
@@ -115,9 +119,10 @@ export function Dock() {
                 <span
                   className={`${tileBase} ${item.tile} group-hover:-translate-y-1.5 group-hover:scale-110 group-focus-visible:-translate-y-1.5 group-focus-visible:scale-110 motion-reduce:transition-none motion-reduce:group-hover:transform-none`}
                 >
-                  <svg viewBox="0 0 24 24" className="size-7 sm:size-8" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" className="relative size-7 sm:size-8" aria-hidden="true">
                     {item.icon}
                   </svg>
+                  {tileGloss}
                 </span>
                 <span className="mt-1 hidden text-[11px] leading-tight whitespace-nowrap text-ink/85 sm:block">
                   {item.label}
