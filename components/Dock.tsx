@@ -130,16 +130,6 @@ export function Dock() {
             </li>
           );
         })}
-
-        <li aria-hidden="true" className="hidden items-start border-l border-white/60 pl-2 sm:flex sm:pl-3">
-          <span className={`${tileBase} bg-white/30 backdrop-blur-sm`}>
-            <svg viewBox="0 0 24 24" className="size-8" fill="none" stroke="#fff" strokeWidth="1.2">
-              <path d="M6 6.5h12l-1.2 13a1.5 1.5 0 0 1-1.5 1.4H8.7a1.5 1.5 0 0 1-1.5-1.4z" fill="rgb(255 255 255 / 0.45)" />
-              <ellipse cx="12" cy="6.5" rx="6" ry="1.2" fill="rgb(255 255 255 / 0.7)" />
-              <path d="M10 9.5v9M14 9.5v9" strokeOpacity="0.8" />
-            </svg>
-          </span>
-        </li>
       </ul>
     </nav>
   );
