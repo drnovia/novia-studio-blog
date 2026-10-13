@@ -1,8 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import heroScene from "@/public/images/novia-hero-scene.jpg";
-import { LiveClock } from "@/components/LiveClock";
-
 export default function Home() {
   return (
     <main>
@@ -54,25 +52,6 @@ export default function Home() {
           <br />
           begin again.
         </p>
-
-        <p className="absolute top-[36%] left-6 hidden rounded-xl bg-ivory-50/60 px-3 py-2 font-serif text-[11px] leading-relaxed tracking-[0.2em] text-ink/80 uppercase backdrop-blur-md lg:block">
-          Same thoughts,
-          <br />
-          a brighter
-          <br />
-          tomorrow.
-        </p>
-
-        <div className="absolute bottom-6 left-6 hidden rounded-2xl border border-white/50 bg-ivory-50/60 px-4 py-3 text-sm text-ink/85 backdrop-blur-md lg:block">
-          <p>Kediri, Indonesia</p>
-          <span aria-hidden="true" className="my-2 block h-px w-6 bg-ink/40" />
-          <LiveClock />
-          <p className="mt-2 font-script text-3xl leading-tight">
-            Good ideas
-            <br />
-            take time.
-          </p>
-        </div>
       </section>
     </main>
   );
