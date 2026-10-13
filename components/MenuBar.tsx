@@ -1,5 +1,5 @@
 import Image from "next/image";
-import noviaReading from "@/public/images/novia-reading.jpg";
+import noviaAvatar from "@/public/images/novia-avatar.jpg";
 import { LiveClock } from "@/components/LiveClock";
 
 const menus = ["File", "Edit", "View", "Go", "Window", "Help"];
@@ -37,9 +37,9 @@ export function MenuBar() {
           <LiveClock withDate />
         </span>
         <Image
-          src={noviaReading}
+          src={noviaAvatar}
           alt=""
-          className="size-5 rounded-full object-cover object-[30%_25%] ring-1 ring-white/70"
+          className="size-5 rounded-full object-cover object-[50%_40%] ring-1 ring-white/70"
           sizes="20px"
         />
       </div>
