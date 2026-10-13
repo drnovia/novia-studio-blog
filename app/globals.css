@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-ocean-50: #eef5f9;
+  --color-ocean-100: #d6e7f1;
+  --color-ocean-300: #8bb8d3;
+  --color-ocean-500: #3f7ea6;
+  --color-ocean-700: #1f5578;
+  --color-ocean-900: #13324a;
+  --color-ivory-50: #fdfbf6;
+  --color-ivory-100: #f8f3e8;
+  --color-ivory-200: #efe6d3;
+  --color-gold-300: #e2cc9d;
+  --color-gold-500: #b8955a;
+  --color-gold-700: #8a6c3a;
+  --color-ink: #1d2a36;
+
+  --font-sans: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  --font-serif: var(--font-instrument-serif), Georgia, serif;
+  --font-script: var(--font-allura), cursive;
+}
+
+body {
+  background: var(--color-ivory-50);
+  color: var(--color-ink);
+}
+
+::selection {
+  background: var(--color-gold-300);
+  color: var(--color-ink);
+}
