@@ -18,7 +18,7 @@ export default function Home() {
         />
         <div
           aria-hidden="true"
-          className="absolute inset-0 bg-[linear-gradient(to_bottom,rgb(253_251_246/0.75)_0%,rgb(253_251_246/0.45)_30%,transparent_48%)] md:bg-[radial-gradient(ellipse_at_50%_30%,rgb(253_251_246/0.45),transparent_45%)]"
+          className="absolute inset-0 bg-[linear-gradient(to_bottom,rgb(253_251_246/0.75)_0%,rgb(253_251_246/0.55)_34%,transparent_54%)] md:bg-[radial-gradient(ellipse_at_50%_30%,rgb(253_251_246/0.45),transparent_45%)]"
         />
 
         <div className="relative flex flex-col items-center px-5 pt-20 text-center sm:pt-24">
@@ -55,7 +55,7 @@ export default function Home() {
           begin again.
         </p>
 
-        <p className="absolute top-[36%] left-6 hidden font-serif text-[11px] leading-relaxed tracking-[0.2em] text-ink/70 uppercase lg:block">
+        <p className="absolute top-[36%] left-6 hidden rounded-xl bg-ivory-50/60 px-3 py-2 font-serif text-[11px] leading-relaxed tracking-[0.2em] text-ink/80 uppercase backdrop-blur-md lg:block">
           Same thoughts,
           <br />
           a brighter
@@ -63,7 +63,7 @@ export default function Home() {
           tomorrow.
         </p>
 
-        <div className="absolute bottom-36 left-6 hidden rounded-2xl border border-white/50 bg-ivory-50/60 px-4 py-3 text-sm text-ink/85 backdrop-blur-md lg:block">
+        <div className="absolute bottom-6 left-6 hidden rounded-2xl border border-white/50 bg-ivory-50/60 px-4 py-3 text-sm text-ink/85 backdrop-blur-md lg:block">
           <p>Kediri, Indonesia</p>
           <span aria-hidden="true" className="my-2 block h-px w-6 bg-ink/40" />
           <LiveClock />
