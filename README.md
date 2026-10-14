@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
 
-## Getting Started
+# ✨ NOVIA Studio Blog
 
-First, run the development server:
+<img src="https://img.shields.io/badge/Jenius-soft%20desktop%20web-FFB7C5?style=for-the-badge" alt="Jenius soft desktop web" />
+<img src="https://img.shields.io/badge/Next.js-16.4-E8D5FF?style=for-the-badge&logo=next.js" alt="Next.js" />
+<img src="https://img.shields.io/badge/React-19-B8E8FC?style=for-the-badge&logo=react" alt="React" />
+
+**Blog & ruang baca NOVIA — antarmuka desktop pastel, menu bar, dock, dan halaman journal yang tenang.** 🌸
+
+[Quickstart](docs/quickstart.md) · [Folder map](docs/folder-map.md) · [Contributing](CONTRIBUTING.md)
+
+</div>
+
+---
+
+## 💖 Tentang
+
+Experiential site (bukan CMS penuh): konten ditulis langsung di JSX per route — `journal`, `about`, `becoming`, `the-unspoken`, `find-your-words`, dan `reading-room`. Chrome global (`MenuBar`, `Dock`, `LiveClock`) hidup di `app/layout.tsx`.
+
+## 🛠 Instalasi
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/drnovia/novia-studio-blog.git
+cd novia-studio-blog
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Pemakaian
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Perintah | Fungsi |
+| --- | --- |
+| `npm run dev` | Dev server (Turbopack) |
+| `npm run build` | Build produksi |
+| `npm run start` | Serve build |
+| `npm run lint` | ESLint |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Langkah detail: [`docs/quickstart.md`](docs/quickstart.md).
 
-## Learn More
+## 📁 Struktur
 
-To learn more about Next.js, take a look at the following resources:
+```text
+app/           → routes & globals.css
+components/    → MenuBar, Dock, placeholders
+public/images/ → foto & avatar
+docs/          → panduan repo
+tests/         → slot tes otomatis
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Peta: [`docs/folder-map.md`](docs/folder-map.md).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🤝 Kontribusi
 
-## Deploy on Vercel
+Ikuti [`CONTRIBUTING.md`](CONTRIBUTING.md) — utamakan konsistensi visual dan aksesibilitas.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📜 Lisensi
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT — [`LICENSE`](LICENSE).
+
+---
+
+<p align="center"><sub>💫 NOVIA Studio · girly-tech clarity</sub></p>
