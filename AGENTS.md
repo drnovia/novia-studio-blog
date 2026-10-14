@@ -22,7 +22,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 - Shared `MenuBar` and `Dock` components are rendered in `app/layout.tsx`; pages should not render their own copies.
 - Articles live in Supabase (Free plan) with RLS: the public reads only published articles; writes and drafts are gated by an `admins` allowlist via `public.is_admin()`. Other page content (Home, About, etc.) is still written in JSX.
 - Schema changes are versioned SQL files in `supabase/migrations/` that the user runs manually in the Supabase SQL Editor; admin users are created in the Supabase dashboard and added to `admins` via SQL.
-- Journal reads Supabase through cached (`"use cache"` + `cacheTag("articles")`) functions in `lib/articles.ts`; the admin area lives under `/admin`, protected by `proxy.ts` (matcher `/admin/:path*`) and `requireAdmin()` in `lib/auth.ts`.
+- Journal reads Supabase through cached (`"use cache"` + `cacheTag("articles")`) functions in `lib/articles.ts`; the admin area lives under `/admin` (login + dashboard), protected by `proxy.ts` (matcher `/admin/:path*`) and `requireAdmin()` in `lib/auth.ts`; draft create/edit is at `/admin/new` and `/admin/edit/[id]` (publish flow still pending).
 - Supabase keys live in gitignored `.env.local`; deploy target is Vercel, where the same env vars must be set.
 - The Unspoken, Becoming, and Find Your Words are separate pages with their own content, not Journal categories.
 - Git remote is GitHub `drnovia/novia-studio-blog`, branch `main`.
