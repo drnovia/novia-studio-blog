@@ -20,6 +20,10 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 - Stack is Next.js 16.4 App Router + React 19 + TypeScript + Tailwind CSS v4 (with `cacheComponents` and React Compiler); not Vite and no GSAP, despite some user briefs saying so.
 - Shared `MenuBar` and `Dock` components are rendered in `app/layout.tsx`; pages should not render their own copies.
-- No auth, database, or content storage exists yet; page content is written directly in JSX.
+- Articles live in Supabase (Free plan) with RLS: the public reads only published articles; writes and drafts are gated by an `admins` allowlist via `public.is_admin()`. Other page content (Home, About, etc.) is still written in JSX.
+- Schema changes are versioned SQL files in `supabase/migrations/` that the user runs manually in the Supabase SQL Editor; admin users are created in the Supabase dashboard and added to `admins` via SQL.
+- Journal reads Supabase through cached (`"use cache"` + `cacheTag("articles")`) functions in `lib/articles.ts`; the admin area lives under `/admin`, protected by `proxy.ts` (matcher `/admin/:path*`) and `requireAdmin()` in `lib/auth.ts`.
+- Supabase keys live in gitignored `.env.local`; deploy target is Vercel, where the same env vars must be set.
+- The Unspoken, Becoming, and Find Your Words are separate pages with their own content, not Journal categories.
 - Git remote is GitHub `drnovia/novia-studio-blog`, branch `main`.
 - The Turbopack dev server can serve stale CSS after editing `@theme` tokens in `app/globals.css`; verify with a production build or clear `.next/dev`.

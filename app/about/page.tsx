@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image, { type StaticImageData } from "next/image";
-import background from "@/public/images/about/background.jpg";
+import { CoastalBackdrop } from "@/components/CoastalBackdrop";
 import dolphins from "@/public/images/about/dolphins.jpg";
 import flamingo from "@/public/images/about/flamingo.jpg";
 import sunset from "@/public/images/about/sunset.jpg";
@@ -45,18 +45,7 @@ const cards: Card[] = [
 export default function AboutPage() {
   return (
     <main className="relative min-h-svh overflow-x-clip">
-      <div aria-hidden="true" className="fixed inset-0 -z-10">
-        <Image
-          src={background}
-          alt=""
-          placeholder="blur"
-          preload
-          fill
-          sizes="100vw"
-          className="object-cover object-[50%_65%]"
-        />
-        <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgb(253_251_246/0.72)_0%,rgb(253_251_246/0.4)_40%,rgb(19_50_74/0.12)_100%)]" />
-      </div>
+      <CoastalBackdrop />
 
       <section className="flex flex-col items-center px-5 pt-20 text-center sm:pt-28">
         <p className="font-serif text-sm tracking-[0.35em] text-ocean-900 uppercase sm:text-lg">
