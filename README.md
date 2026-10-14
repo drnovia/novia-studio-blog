@@ -8,7 +8,7 @@
 
 **Blog & ruang baca NOVIA — antarmuka desktop pastel, menu bar, dock, dan halaman journal yang tenang.** 🌸
 
-[Quickstart](docs/quickstart.md) · [Folder map](docs/folder-map.md) · [Contributing](CONTRIBUTING.md)
+[Quickstart](docs/quickstart.md) · [Folder map](docs/folder-map.md) · [Workspace index](docs/monorepo-index.md) · [Contributing](CONTRIBUTING.md)
 
 </div>
 
@@ -21,7 +21,7 @@ Experiential site (bukan CMS penuh): konten ditulis langsung di JSX per route �
 ## 🛠 Instalasi
 
 ```bash
-git clone https://github.com/drnovia/novia-studio-blog.git
+git clone https://github.com/drnovia/Novia-Studio-Blog.git
 cd novia-studio-blog
 npm install
 ```
